@@ -1,0 +1,96 @@
+package Controlador;
+import Modelo.Modelo;
+import Vista.Ventana;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+public class Controlador implements ActionListener {
+    private Ventana view;
+    private Modelo model;
+    public Controlador(Ventana view, Modelo model) {
+        this.view = view;
+        this.model = model;
+        view.JBComprobar.addActionListener(this);
+    }
+    public void guia1(boolean campo) {
+        if (campo == true) {
+            view.resultado1.setText("CORRECTO!!!");
+        } else {
+            view.resultado1.setText("Texto no concuerda con el formato");
+        }
+    }
+    public void guia2(boolean campo) {
+        if (campo == true) {
+            view.resultado2.setText("CORRECTO!!!");
+        } else {
+            view.resultado2.setText("Texto no concuerda con el formato");
+        }
+    }
+    public void guia3(boolean campo) {
+        if (campo == true) {
+            view.resultado3.setText("CORRECTO!!!");
+        } else {
+            view.resultado3.setText("Texto no concuerda con el formato");
+        }
+    }
+    public void guia4(boolean campo) {
+        if (campo == true) {
+            view.resultado4.setText("CORRECTO!!!");
+        } else {
+            view.resultado4.setText("Texto no concuerda con el formato");
+        }
+    }
+    public void campo1(boolean campo) {
+        if (campo == true) {
+            view.Color1.setBackground(Color.green);
+        } else {
+            view.Color1.setBackground(Color.red);
+        }
+    }
+    public void campo2(boolean campo) {
+        if (campo == true) {
+            view.Color2.setBackground(Color.green);
+        } else {
+            view.Color2.setBackground(Color.red);
+        }
+    }
+    public void campo3(boolean campo) {
+        if (campo == true) {
+            view.Color3.setBackground(Color.green);
+        } else {
+            view.Color3.setBackground(Color.red);
+        }
+    }
+    public void campo4(boolean campo) {
+        if (campo == true) {
+            view.Color4.setBackground(Color.green);
+        } else {
+            view.Color4.setBackground(Color.red);
+        }
+    }
+    public void iniciar() {
+        
+        view.setLocationRelativeTo(null);
+
+        
+    }
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == view.JBComprobar) {
+            String campo1 = view.Campo1.getText();
+            String campo2 = view.Campo2.getText();
+            String campo3 = view.Campo3.getText();
+            String campo4 = view.Campo4.getText();
+            campo1(model.eREnteros(campo1));
+            campo2(model.eRReales(campo2));
+            campo3(model.erNumerosCientificos(campo3));
+            campo4(model.eRCorreos(campo4));
+            guia1(model.eREnteros(campo1));
+            guia2(model.eRReales(campo2));
+            guia3(model.erNumerosCientificos(campo3));
+            guia4(model.eRCorreos(campo4));
+
+        }
+
+    }
+
+}
