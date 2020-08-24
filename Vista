@@ -1,0 +1,241 @@
+package Vista;
+import java.awt.Image;
+import java.awt.Toolkit;
+public class Ventana extends javax.swing.JFrame {
+    public Ventana() {
+        initComponents();
+    }
+        public Image getIconImage(){
+        Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Vista/sg.png"));
+        return icono;
+    }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        BSalir = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        Campo4 = new javax.swing.JTextField();
+        Campo3 = new javax.swing.JTextField();
+        Campo2 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        Color4 = new javax.swing.JPanel();
+        Color1 = new javax.swing.JPanel();
+        Color3 = new javax.swing.JPanel();
+        Color2 = new javax.swing.JPanel();
+        Campo1 = new javax.swing.JTextField();
+        JBComprobar = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        resultado4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        resultado1 = new javax.swing.JLabel();
+        resultado2 = new javax.swing.JLabel();
+        resultado3 = new javax.swing.JLabel();
+        JframeFondo = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        BSalir.setBackground(new java.awt.Color(102, 0, 0));
+        BSalir.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        BSalir.setForeground(new java.awt.Color(255, 255, 255));
+        BSalir.setText("Exit");
+        BSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 70, 30));
+
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("CIENTIFICOS");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, 150, 40));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("DIGITE NUMEROS REALES :");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 310, 40));
+
+        jLabel3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("ESCRIBA CORREOS ELECTRONICOS :");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 330, 40));
+
+        jLabel4.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("DIGITE NUMEROS EN NOTACION :");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 40));
+
+        Campo4.setBackground(new java.awt.Color(51, 0, 0));
+        Campo4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Campo4.setForeground(new java.awt.Color(255, 255, 255));
+        Campo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Campo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 320, 40));
+
+        Campo3.setBackground(new java.awt.Color(51, 0, 0));
+        Campo3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Campo3.setForeground(new java.awt.Color(255, 255, 255));
+        Campo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Campo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 320, 40));
+
+        Campo2.setBackground(new java.awt.Color(51, 0, 0));
+        Campo2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Campo2.setForeground(new java.awt.Color(255, 255, 255));
+        Campo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Campo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 320, 40));
+
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 55)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("EXPRESIONES REGULARES");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 780, 70));
+        getContentPane().add(Color4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, 40, 40));
+        getContentPane().add(Color1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 160, 40, 40));
+        getContentPane().add(Color3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 300, 40, 40));
+        getContentPane().add(Color2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, 40, 40));
+
+        Campo1.setBackground(new java.awt.Color(51, 0, 0));
+        Campo1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        Campo1.setForeground(new java.awt.Color(255, 255, 255));
+        Campo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Campo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 320, 40));
+
+        JBComprobar.setBackground(new java.awt.Color(102, 0, 0));
+        JBComprobar.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        JBComprobar.setForeground(new java.awt.Color(255, 255, 255));
+        JBComprobar.setText("Comprobar");
+        JBComprobar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBComprobarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(JBComprobar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 170, 90));
+
+        jLabel6.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("DIGITE NUMEROS ENTEROS :");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 320, 40));
+
+        resultado4.setBackground(new java.awt.Color(0, 0, 0));
+        resultado4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        resultado4.setForeground(new java.awt.Color(255, 255, 255));
+        resultado4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        getContentPane().add(resultado4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 570, 400, 40));
+
+        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("CORREOS");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 570, 120, 40));
+
+        jLabel9.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("REALES");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 90, 40));
+
+        jLabel10.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("ENTEROS");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 110, 40));
+
+        resultado1.setBackground(new java.awt.Color(0, 0, 0));
+        resultado1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        resultado1.setForeground(new java.awt.Color(255, 255, 255));
+        resultado1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        getContentPane().add(resultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, 400, 40));
+
+        resultado2.setBackground(new java.awt.Color(0, 0, 0));
+        resultado2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        resultado2.setForeground(new java.awt.Color(255, 255, 255));
+        resultado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        getContentPane().add(resultado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 470, 400, 40));
+
+        resultado3.setBackground(new java.awt.Color(0, 0, 0));
+        resultado3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        resultado3.setForeground(new java.awt.Color(255, 255, 255));
+        resultado3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        getContentPane().add(resultado3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 520, 400, 40));
+
+        JframeFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Imagenes/Fondo.jpg"))); // NOI18N
+        getContentPane().add(JframeFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -63, 820, 730));
+
+        pack();
+    }// </editor-fold>                        
+
+    private void BSalirActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        System.exit(0);
+    }                                      
+
+    private void Campo4ActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void Campo3ActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void Campo2ActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void Campo1ActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void JBComprobarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        Ventana vieww = new Ventana();
+    }                                           
+
+    /**
+     * @param args the command line arguments     */
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton BSalir;
+    public javax.swing.JTextField Campo1;
+    public javax.swing.JTextField Campo2;
+    public javax.swing.JTextField Campo3;
+    public javax.swing.JTextField Campo4;
+    public javax.swing.JPanel Color1;
+    public javax.swing.JPanel Color2;
+    public javax.swing.JPanel Color3;
+    public javax.swing.JPanel Color4;
+    public javax.swing.JButton JBComprobar;
+    private javax.swing.JLabel JframeFondo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    public javax.swing.JLabel resultado1;
+    public javax.swing.JLabel resultado2;
+    public javax.swing.JLabel resultado3;
+    public javax.swing.JLabel resultado4;
+    // End of variables declaration                   
+}
