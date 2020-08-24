@@ -1,0 +1,22 @@
+// @author Santiago Gonzalez
+package Modelo;
+
+public class Modelo {
+    
+    public boolean eREnteros(String campo1) { // metodo que determina si la cadena de texto cumple con la expresion regular
+        return campo1.matches("^(\\+|-)?\\d+$");  // Expresion regular para numeros enteros con y sin signo
+    }
+
+    public boolean eRReales(String campo2) { // metodo que determina si la cadena de texto cumple con la expresion regular
+        return campo2.matches("^(?:\\+|-)?\\d+\\.\\d+$"); // Expresion regular para numeros reales con y sin signo
+    }
+
+    public boolean erNumerosCientificos(String campo3) { // metodo que determina si la cadena de texto cumple con la expresion regular
+        return campo3.matches("^[-+]?[0-9]+\\.?[0-9]+([eE][-+][0-9]+)$");// Expresion regular para numeros en notación cientifica
+
+    }
+
+    public boolean eRCorreos(String campo4) { // metodo que determina si la cadena de texto cumple con la expresion regular
+        return campo4.matches("^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"); // Expresion regular para correos electronicos
+    }
+}
